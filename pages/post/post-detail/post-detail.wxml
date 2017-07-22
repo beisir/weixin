@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="heade-img" src="{{isplay?item.music.coverImgUrl : item.headImg}}"></image>
+  <image  catchtap="audioFn" class="audio" src="{{isplay?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+  <view class="author-date">
+    <image class="avatar" src="{{item.user_img}}"></image>
+    <text class="author">{{item.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">三天前</text>
+  </view>
+  <text class="title">{{item.title}}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image catchtap="showFn" wx:if="{{checked}}" src="/images/icon/collection.png"></image>
+      <image catchtap="showFn" wx:else src="/images/icon/collection-anti.png"></image>
+      <image catchtap="shareFn" class="share-img" src="/images/icon/share.png"></image>    
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{item.detail}}</text>
+</view>

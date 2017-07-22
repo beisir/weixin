@@ -1,0 +1,21 @@
+@import "../star/star-template.wxss";
+
+.movie{ 
+  display: flex;
+  flex-direction:column;
+  padding: 0 22rpx;
+  box-sizing: border-box;
+}
+.movie-img{
+  width:200rpx;
+  height:270rpx;
+  padding-bottom: 20rpx;
+}
+.movie-name{
+  width:200rpx;
+  margin-bottom: 16rpx;
+  font-size: 24rpx;
+  white-space:nowrap; 
+  text-overflow: ellipsis;  
+  overflow: hidden;    
+}

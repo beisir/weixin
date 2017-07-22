@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="/images/avatar/4.png" class="user-imgs"></image>
+  <text class="user-name"><text class="red">深情即时死罪</text>，又怎怕挫骨扬灰</text>
+  <view class="moto-container" bindtap="tapFn">
+    <text class="moto">开启小程序</text>
+  </view>
+</view>

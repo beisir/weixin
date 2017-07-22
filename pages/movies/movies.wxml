@@ -1,0 +1,29 @@
+<import src="list/list-template.wxml" />
+<import src="grid/grid-template.wxml" />
+<view class="container">
+  <view class="search">
+    <icon type="search" class="search-icon" size="13" color="#405f80" />
+    <input type="text" 
+     placeholder="变形金刚" 
+     placeholder-class="placeholder" 
+     bindfocus="onBindFocus"
+     bindchange="onBindChange" />
+     <image src="/images/icon/xx.png" wx:if="{{close}}" class="close" catchtap="onClose"></image>
+  </view>
+  <view class="container-template" wx:if="{{containerShow}}">
+    <view class="movies-template">
+      <template is="list" data="{{...in_theaters}}"></template>
+    </view>
+    <view class="movies-template">
+      <template is="list" data="{{...top250}}"></template>
+    </view>
+    <view class="movies-template">
+      <template is="list" data="{{...coming_soon}}"></template>
+    </view>
+   </view> 
+</view>
+
+
+<view class="search-page" wx:if="{{searchPage}}">
+  <template is="movieGrid" data="{{...searchResult}}"/>
+</view>

@@ -1,0 +1,8 @@
+<import src="../star/star-template" />
+<template name="movie">
+  <view class="movie" catchtap="onMovieTap" data-id="{{id}}">
+    <image class="movie-img" src="{{large}}"></image>
+    <text class="movie-name">{{title}}</text>
+    <template is="startemplate" data="{{average:average,stars:stars}}" />
+  </view>
+</template>
